@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="headername">
+        <h2 id="headertext">TIC TAC TOE</h2>
+    </div>
+    </header>
+    
+    <main>
+        <section id="game-table">
+            <div class="row">
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c1-1" id="1"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c1-2" id="2"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c1-3" id="3"></input>
+            </div>
+            <div class="row2">
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c2-1" id="4"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c2-2" id="5"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c2-3" id="6"></input>
+            </div>
+            <div class="row3">
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c3-1" id="7"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c3-2" id="8"></input>
+                <input readonly type="text" onclick="startGame(table,player)" class="cell c3-3" id="9"></input>
+            </div>
+        </section>
+
+        <section id="buttons">
+            <button onclick="reset()" id="reset">RESET</button>
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
